@@ -1,0 +1,56 @@
+<!--输入四个数字可以得出所有算出24点的可能-->
+<text>输入四个整数可以得出所有算出24点的可能</text>
+<view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+     <view class="page-section">
+    <view class="weui-cells__title">输入第1个数</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus placeholder="将会获取焦点" name="one"/>
+      </view>
+    </view>
+  </view>
+<view class='line1'></view>
+   <view class='line1'></view>
+    <view class="page-section">
+    <view class="weui-cells__title">输入第2个数</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus placeholder="将会获取焦点" name="two"/>
+      </view>
+    </view>
+  </view>
+<view class='line1'></view>
+   <view class='line1'></view>
+    <view class="page-section">
+    <view class="weui-cells__title">输入第3个数</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus placeholder="将会获取焦点" name="three"/>
+      </view>
+    </view>
+  </view>
+
+   <view class='line1'></view>
+    <view class="page-section">
+    <view class="weui-cells__title">输入第4个数</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus placeholder="将会获取焦点" name="four"/>
+      </view>
+    </view>
+  </view>
+
+   <view class='line1'></view>
+  <button bindtap="calculate" size="mini" form-type="submit">计算</button>
+  </form>
+
+  <block wx:for="{{ids}}" wx:for-index="idx" wx:for-item="item">
+  
+   <view>
+    <text>{{item}}</text>
+  </view>
+  
+  </block>
+</view>
+
